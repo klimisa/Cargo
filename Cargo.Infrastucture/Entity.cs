@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cargo.DomainModel
+namespace Cargo.Infrastucture
 {
-    public class Class1
+    public abstract class Entity
     {
     }
 }
