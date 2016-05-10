@@ -2,6 +2,7 @@
 
 namespace Cargo.DomainModel
 {
+    //TODO: This class should be implemented with specification pattern.
     public class DeliverySpecification
     {
         private DateTime _arrivalTime;
@@ -16,6 +17,12 @@ namespace Cargo.DomainModel
         {
             get { return _destination; }
             set { _destination = value; }
+        }
+
+        //Should take an expresion as arguments
+        public bool IsSatisfied()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Cargo.DomainModel
             set { _trackingId = value; }
         }
 
+        //TODO: How do I implement Many-To-One relation ?
         public Dictionary<string, Customer> Customers;
 
         private DeliverySpecification _goal;
@@ -30,8 +31,6 @@ namespace Cargo.DomainModel
             get { return _deliveryHistory; }
             set { _deliveryHistory = value; }
         }
-
-        public List<HandlingEvent> Handled;
          
         public Cargo()
         {
