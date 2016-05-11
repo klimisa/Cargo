@@ -1,6 +1,6 @@
 # Cargo
 
 #Tips
-Write the code of the example while reading the book. 
-Try to do them before they actually explain in details,
-that way you get deeper insights.
+Write the code of the Shipping example while reading the book. 
+Try to do the code before you actually see the details or the explanation if possible,
+that way you will get deeper insight.

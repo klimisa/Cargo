@@ -5,22 +5,14 @@ namespace Cargo.DomainModel.Models
 {
     public class HandlingEvent
     {
+        //TODO: It might be better to replace this with a enumerator.
         private static string LOADING_EVENT = "LOAD";
 
-        public string EventId
-        {
-            get
-            {
-                return string.Format("{0}-{1}-{2}", _cargo.TrackingId, _type, _completionTime.ToString("yyyyMMddhhmmss"));
-            }
-        }
+        public string EventId => $"{_cargo.TrackingId}-{_type}-{_completionTime.ToString("yyyyMMddhhmmss")}";
 
         private DateTime _completionTime;
 
-        public DateTime CompletionTime
-        {
-            get { return _completionTime; }
-        }
+        public DateTime CompletionTime => _completionTime;
 
         //TODO: Maybe an Enumerator; 
         private string _type;
