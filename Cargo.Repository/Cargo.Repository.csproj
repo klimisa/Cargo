@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D5505F8-47BB-4BAC-93DE-0AB84DD5A920}</ProjectGuid>
+    <ProjectGuid>{64D4008C-3811-4EFC-A2DA-BF798BE8D95C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cargo.DomainModel</RootNamespace>
-    <AssemblyName>Cargo.DomainModel</AssemblyName>
+    <RootNamespace>Cargo.Repository</RootNamespace>
+    <AssemblyName>Cargo.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factories\CargoFactory.cs" />
-    <Compile Include="Models\Cargo.cs" />
-    <Compile Include="Models\CarrierMovement.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\DeliveryHistory.cs" />
-    <Compile Include="Models\DeliverySpecification.cs" />
-    <Compile Include="Models\HandlingEvent.cs" />
-    <Compile Include="Models\Location.cs" />
+    <Compile Include="CargoRepository.cs" />
+    <Compile Include="CarrierMovementRepository.cs" />
+    <Compile Include="CustomerRepository.cs" />
+    <Compile Include="LocationRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\ICargoRepository.cs" />
-    <Compile Include="Repository\ICarrierMovementRepository.cs" />
-    <Compile Include="Repository\ICustomerRepository.cs" />
-    <Compile Include="Repository\ILocationRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cargo.DomainModel\Cargo.DomainModel.csproj">
+      <Project>{6D5505F8-47BB-4BAC-93DE-0AB84DD5A920}</Project>
+      <Name>Cargo.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

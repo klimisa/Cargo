@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cargo.DomainModel
+namespace Cargo.DomainModel.Models
 {
     //TODO: This class should be implemented with specification pattern.
     public class DeliverySpecification
